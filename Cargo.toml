@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+chrono = "0.4.41"
+color-eyre = "0.6.5"
+libbpf-sys = "1.5.1"
+libc = "0.2.174"
+ratatui = "0.29.0"

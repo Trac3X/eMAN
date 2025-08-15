@@ -48,3 +48,18 @@ pub fn fetch_maps() -> Vec<bpf_map_info> {
     }
     maprams
 }
+
+pub fn fetch_map_by_id(id: u32) -> Option<bpf_map_info> {
+    let fd = unsafe { bpf_map_get_fd_by_id(id) };
+    if fd < 0 {
+        return None;
+    }
+
+    let mut info: bpf_map_info = unsafe { mem::zeroed() };
+    let mut len = mem::size_of_val(&info) as u32;
+
+    let ret = unsafe { bpf_map_get_info_by_fd(fd, &mut info, &mut len) };
+    unsafe { libc::close(fd) };
+
+    if ret == 0 { Some(info) } else { None }
+}
