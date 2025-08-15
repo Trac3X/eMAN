@@ -24,6 +24,9 @@ jobs:
       - name: Cargo fmt check
         run: cargo fmt --all -- --check
 
+      - name: Cargo test
+        run: cargo test --workspace --release --locked
+
       - name: Cargo build
         run: cargo build --workspace --release --locked
 

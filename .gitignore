@@ -11,9 +11,5 @@
 *.a
 *.lib
 
-# Cargo.lock for library projects
-# You may want to track Cargo.lock in binary projects
-Cargo.lock
-
 # Linux specific
 *.swp
