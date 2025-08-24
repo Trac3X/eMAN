@@ -106,18 +106,20 @@ By making eBPF more accessible, **eMAN** helps unlock the full potential of mode
 
 Once released, **eMAN** will be installable via Cargo:
 
-```bash
-cargo install eman
-eman
-```
-
-Until then, clone the repo and run from source:
+Clone the repo and run from source:
 
 ```bash
 git clone https://github.com/yourusername/eman.git
 cd eman
-cargo run
+sudo cargo run
 ```
+
+## Screenshots
+
+<img width="738" height="460" alt="image" src="https://github.com/user-attachments/assets/962290cb-d72f-4dfb-9a7a-9d9004c2bb7c" />
+<img width="1907" height="1004" alt="image" src="https://github.com/user-attachments/assets/0b3f39bc-d115-42d9-901b-af7fd7e06590" />
+<img width="1907" height="1004" alt="image" src="https://github.com/user-attachments/assets/0b564785-8c73-4c32-9058-5f3f5af37b97" />
+<img width="1907" height="1004" alt="image" src="https://github.com/user-attachments/assets/694835b9-4616-428a-91d7-953d5eb4e7c8" />
 
 ---
 
